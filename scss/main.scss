@@ -1,0 +1,43 @@
+
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+
+body{
+  position: relative;
+}
+
+.u_column-contaner {
+  font-size: 0;
+}
+
+.representative {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  background: #C8F7C5;
+  margin: 5px;
+  padding: 0 0 10px 10px;
+}
+
+.rep-name {
+  font-size: 15px;
+}
+
+.social-media li {
+  font-size: 14px;
+}
+
+.term-information {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-bar {
+  outline: none;
+  border: solid 2px #000;
+  position: absolute;
+  top: 0; right: 100px;
+}
