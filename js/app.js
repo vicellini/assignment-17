@@ -43,13 +43,11 @@ $.getJSON("https://congress.api.sunlightfoundation.com/legislators?callback=?").
 
 
   searchBarEl.addEventListener('keypress', function(e){
+  $.getJSON("https://congress.api.sunlightfoundation.com//districts/locate?zip=" + theTextInput).then(function(serverRes){
+    console.log(serverRes)
+  })
   var keyCode = e.keyCode;
   if(keyCode === 13){
     var theTextInput = document.getElementById("search-text").value;
-    $.getJSON("https://congress.api.sunlightfoundation.com//districts/locate?zip=" + theTextInput).then(function(serverRes){
-      console.log(serverRes)
-    })
   }
 })
-
-    console.log(theTextInput)
